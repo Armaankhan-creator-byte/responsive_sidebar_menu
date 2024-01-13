@@ -1,0 +1,258 @@
+:root{
+    --voilet:#9381ff;
+    --light-voilet:#dbdbf9;
+    --light-gray:#ced4da;
+    --gray:#6c757d;
+    --white:#fff;
+    --black:#111;
+    --light-white:#f4efef;
+} 
+.dark_theme{
+    --light-voilet:#111;
+    --black:#fff;
+    --gray:#fff;
+    --white:#111;
+    --light-white:#575353;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* background-color: var(--light-gray); */
+}
+.container{
+    display:flex;
+   max-height: 100vh; 
+
+}
+.vertical_navbar{
+    flex-basis: calc(100vw - 96%);
+    padding:10px;
+    /* border:1px solid green; */
+    background-color: var(--light-white);
+height:100%;
+}
+.logo{
+    display:flex;
+    column-gap: 10px;
+}
+.logo button{
+    background-color: var(--voilet);
+    border:0;
+    padding:10px 10px;
+    border-radius: 5px;
+    color:var(--white);
+    font-weight: bolder;
+}
+.heading{
+    display:none;
+
+}
+.updated_heading{
+    display:block;
+}
+.heading p:first-child{
+    color:var(--gray);
+
+}
+.heading p:last-child{
+    color:var(--black);
+}
+.search
+{
+    background-color:var(--light-voilet) ;
+    max-width:50px;
+display: flex;
+justify-content: center;
+margin-top: 20px;
+align-items: center;
+border-radius: 5px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+color:var(--black);
+}
+ input{
+    background-color:var(--light-voilet) ;
+    border:0px;
+   width:60%;
+   display:none;
+color:var(--black);
+}
+input:focus{
+    outline:0px
+}
+.updated_input{
+    display:flex;
+}
+.large_search{
+    display: flex; 
+    /* border:1px solid green; */
+justify-content: space-around;
+max-width:210px;
+
+
+
+align-items: center;
+border-radius: 5px;
+} 
+ul{
+    display:flex;
+    flex-direction: column;
+    margin-top: 20px;
+    
+    
+    
+}
+li{
+    display:flex;
+    justify-content:left;
+    align-items: center;
+    column-gap: 10px;
+    height:70px;
+    padding-left:10px;
+    border-radius: 4px;
+    width:60px;
+    color:var(--black);
+    /* border:1px solid yellow; */
+    /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+
+}
+.updated_li{
+    width:130px;
+}
+li a{
+    display:none;
+}
+.show_anchor{
+    display:flex;
+}
+li:hover{
+    cursor: pointer;
+    background-color: var(--voilet);
+
+}
+a{
+    text-decoration: none;
+    color:var(--gray);
+}
+.logout{
+    display:flex;
+    margin-top: 100px;
+    /* height:120px; */
+    /* border: 1px solid green; */
+    /* align-items: center; */
+    column-gap: 10px;
+    width:40px;
+    border-radius: 4px;
+    padding:10px;
+    color:var(--black);
+}
+.updated_log{
+    width:100px;
+
+}
+.logout:hover{
+    background-color: var(--voilet);
+}
+.hide{
+    display: none;
+}
+.updated_logout{
+    display:flex;
+}
+.mode
+{
+    display:flex;
+    /* flex-direction: row; */
+    /* border:1px solid green; */
+    justify-content: space-between;
+    margin-top: 20px;
+    padding:10px;
+    background-color: var(--light-voilet);
+    border-radius: 10px;
+    width:90px;
+
+}
+.updated_mode{
+    width:200px;
+}
+.dark_mode{
+     display:none;
+     justify-content: space-evenly;
+     /* border: 1px solid green; */
+     width:110px;
+     color:var(--black);
+}
+.light_mode{
+    display:none;
+    justify-content: space-evenly;
+    /* border: 1px solid green; */
+    width:110px;
+    color:var(--black);
+}
+.button{
+    background-color: var(--gray);
+    width:50px;
+    height:30px;
+    border-radius: 10px;
+    position: relative;
+}
+.circle{
+    border:0;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color:var(--light-gray);
+}
+.updated_circle
+{
+    left:55%;
+
+    position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.sidebar{
+    flex-basis:96%;
+    /* border:1px solid red; */
+    height:757px;
+    background-color: var(--light-voilet);
+    position: relative;
+    
+
+}
+.sidebar p{
+    padding-left: 30px;
+    color:var(--black);
+}
+.sidebar_circle{
+    position: absolute;
+    top:10px; 
+     left:-10px;
+    color:var(--black);
+    border-radius: 50%;
+    width:30px;
+    height:30px;
+    background-color: var(--voilet);
+    /* transition: 0.4s all; */
+}
+
+#right_arrow{
+   position: relative;
+   top:4px;
+   left:4px;
+   display: block;
+   
+}
+#left_arrow{
+    position: relative;
+    top:4px;
+    left:4px; 
+    display: none; 
+  
+}
